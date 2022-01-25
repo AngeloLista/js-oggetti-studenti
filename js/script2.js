@@ -55,3 +55,16 @@ do { newSurname = prompt('Inserisci Cognome Studente').trim();
 let newAge;
 do { newAge = parseInt(prompt('Inserisci Età Studente').trim());
 } while (isNaN(newAge));
+
+
+//Creo nuovo oggetto
+
+const newStudent = {
+    nome : newName,
+    cognome: newSurname,
+    anni: newAge,
+}
+
+students.push(newStudent);
+
+printObjectArray(students, display);
