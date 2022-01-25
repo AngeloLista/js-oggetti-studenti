@@ -39,3 +39,19 @@ const printObjectArray = (ObjectArray, targetElement) => {
 
 //Chiamo la funzione
 printObjectArray(students, display)
+
+
+
+//Chiedo all'utente le proprietà di un nuovo oggetto
+let newName;
+do {
+    newName = prompt('Inserisci Nome Studente').trim();
+} while (!newName);
+
+let newSurname;
+do { newSurname = prompt('Inserisci Cognome Studente').trim();
+} while(!newSurname);
+
+let newAge;
+do { newAge = parseInt(prompt('Inserisci Età Studente').trim());
+} while (isNaN(newAge));
